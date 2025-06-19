@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assests/Images/logo.jpg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            font-family: 'Scheherazade New', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 500px;
+            background-color: cornflowerblue;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            font-family: 'DM Serif Text', serif;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 200px ;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .inputs input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .log-in button,
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #004aad;
+            color: white;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .log-in button:hover,
+        .signup-button:hover {
+            background-color: #003080;
+        }
+
+        .forgot-password {
+            margin-bottom: 15px;
+        }
+
+        .forgot-password a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 480px) {
+            .wrapper {
+                padding: 20px;
+            }
+            .logo img {
+                width: auto;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>Welcome to Library Management System</h1>
+
+    <div class="logo">
+        <img src="Assests/Images/l1.png" alt="Library Logo">
+    </div>
+
+    <div class="inputs">
+        <input type="text" id="Username" placeholder="Enter Username or Phone No" required>
+        <input type="password" id="Password" placeholder="Enter Password" required>
+    </div>
+
+    <div class="log-in">
+        <button type="button" id="ELogIn">Employee Log In</button>
+        <button type="button" id="SLogIn">Student Log In</button>
+    </div>
+
+    <div class="forgot-password">
+        <a href="ForgPassword.html">Forgot Password?</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <button class="signup-button" onclick="window.location.href='CreateAcc.html'">Sign Up</button>
+</div>
+
+</body>
+</html>
